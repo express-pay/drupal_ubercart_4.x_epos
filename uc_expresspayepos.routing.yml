@@ -1,0 +1,23 @@
+uc_expresspayepos.complete:
+  path: "/cart/expresspayepos/complete"
+  defaults:
+    _controller: '\Drupal\uc_expresspayepos\Controller\ExpresspayEposController::complete'
+    _title: "Order complete"
+  requirements:
+    _permission: "access content"
+
+uc_expresspayepos.notification:
+  path: "/cart/expresspayepos/notification"
+  defaults:
+    _controller: '\Drupal\uc_expresspayepos\Controller\ExpresspayEposController::notification'
+    _title: "Notification callback"
+  requirements:
+    _permission: "access content"
+
+uc_expresspayepos.cancel:
+  path: "/cart/expresspayepos/cancel"
+  defaults:
+    _controller: '\Drupal\uc_expresspayepos\Controller\ExpresspayEposController::cancel'
+    _title: "Order cancel"
+  requirements:
+    _permission: "access content"
